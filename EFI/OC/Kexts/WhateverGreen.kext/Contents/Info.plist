@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>24G517</string>
+	<string>23H626</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
-	<string>SMCRadeonSensors</string>
+	<string>WhateverGreen</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.ChefKiss.SMCRadeonSensors</string>
+	<string>as.vit9696.WhateverGreen</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>SMCRadeonSensors</string>
+	<string>WhateverGreen</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.4.0</string>
+	<string>1.7.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,35 +25,50 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2.4.0</string>
+	<string>1.7.0</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>24F74</string>
+	<string></string>
 	<key>DTPlatformName</key>
 	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>15.5</string>
+	<string>14.2</string>
 	<key>DTSDKBuild</key>
-	<string>24F74</string>
+	<string>23C53</string>
 	<key>DTSDKName</key>
-	<string>macosx15.5</string>
+	<string>macosx14.2</string>
 	<key>DTXcode</key>
-	<string>1640</string>
+	<string>1520</string>
 	<key>DTXcodeBuild</key>
-	<string>16F6</string>
+	<string>15C500b</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>org.ChefKiss.SMCRadeonSensors</key>
+		<key>NVHDAEnabler</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>org.ChefKiss.SMCRadeonSensors</string>
+			<string>as.vit9696.WhateverGreen</string>
 			<key>IOClass</key>
-			<string>SMCRadeonSensors</string>
+			<string>NVHDAEnabler</string>
 			<key>IOMatchCategory</key>
-			<string>SMCRadeonSensors</string>
+			<string>IOFramebuffer</string>
+			<key>IOPCIClassMatch</key>
+			<string>0x03000000&amp;0xff000000</string>
+			<key>IOPCIMatch</key>
+			<string>0x000010de&amp;0x0000ffff</string>
 			<key>IOProbeScore</key>
-			<string>500</string>
+			<integer>300000</integer>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+		</dict>
+		<key>as.vit9696.WhateverGreen</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>as.vit9696.WhateverGreen</string>
+			<key>IOClass</key>
+			<string>WhateverGreen</string>
+			<key>IOMatchCategory</key>
+			<string>WhateverGreen</string>
 			<key>IOProviderClass</key>
 			<string>IOResources</string>
 			<key>IOResourceMatch</key>
@@ -61,21 +76,17 @@
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.14</string>
+	<string>10.6</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2023-2024 ChefKiss. Licensed under the Thou Shalt Not Profit License version 1.5. See https://github.com/ChefKissInc/SMCRadeonSensors/LICENSE for details.</string>
+	<string>Copyright © 2018 vit9696. All rights reserved.</string>
 	<key>OSBundleCompatibleVersion</key>
-	<string>2.4.0</string>
+	<string>1.0</string>
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>as.vit9696.Lilu</key>
 		<string>1.2.0</string>
-		<key>as.vit9696.VirtualSMC</key>
-		<string>1.0.0</string>
 		<key>com.apple.iokit.IOPCIFamily</key>
 		<string>1.0.0b1</string>
-		<key>com.apple.kec.Libm</key>
-		<string>1.0</string>
 		<key>com.apple.kpi.bsd</key>
 		<string>10.0.0</string>
 		<key>com.apple.kpi.dsep</key>
@@ -85,6 +96,8 @@
 		<key>com.apple.kpi.libkern</key>
 		<string>10.0.0</string>
 		<key>com.apple.kpi.mach</key>
+		<string>10.0.0</string>
+		<key>com.apple.kpi.unsupported</key>
 		<string>10.0.0</string>
 	</dict>
 	<key>OSBundleRequired</key>

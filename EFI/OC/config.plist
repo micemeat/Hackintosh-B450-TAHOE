@@ -148,7 +148,7 @@
 				<key>BundlePath</key>
 				<string>SMCSuperIO.kext</string>
 				<key>Comment</key>
-				<string>Fan/temperature monitoring</string>
+				<string>SuperIO sensor</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -157,8 +157,6 @@
 				<string></string>
 				<key>MinKernel</key>
 				<string></string>
-				<key>ParentBundlePath</key>
-				<string>VirtualSMC.kext</string>
 				<key>PlistPath</key>
 				<string>SMCSuperIO.kext/Contents/Info.plist</string>
 			</dict>
@@ -168,7 +166,7 @@
 				<key>BundlePath</key>
 				<string>SMCAMDProcessor.kext</string>
 				<key>Comment</key>
-				<string>AMD CPU sensor plugin</string>
+				<string>AMD CPU sensor</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -177,8 +175,6 @@
 				<string></string>
 				<key>MinKernel</key>
 				<string></string>
-				<key>ParentBundlePath</key>
-				<string>VirtualSMC.kext</string>
 				<key>PlistPath</key>
 				<string>SMCAMDProcessor.kext/Contents/Info.plist</string>
 			</dict>
@@ -206,7 +202,7 @@
 				<key>BundlePath</key>
 				<string>SMCRadeonGPU.kext</string>
 				<key>Comment</key>
-				<string>AMD GPU SMC plugin</string>
+				<string>AMD GPU SMC</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -215,8 +211,6 @@
 				<string></string>
 				<key>MinKernel</key>
 				<string></string>
-				<key>ParentBundlePath</key>
-				<string>RadeonSensor.kext</string>
 				<key>PlistPath</key>
 				<string>SMCRadeonGPU.kext/Contents/Info.plist</string>
 			</dict>
@@ -224,21 +218,19 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
-				<string>SMCRadeonSensors.kext</string>
+				<string>WhateverGreen.kext</string>
 				<key>Comment</key>
-				<string>AMD GPU temperature</string>
+				<string>GPU patches</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/SMCRadeonSensors</string>
+				<string>Contents/MacOS/WhateverGreen</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
 				<string></string>
-				<key>ParentBundlePath</key>
-				<string>RadeonSensor.kext</string>
 				<key>PlistPath</key>
-				<string>SMCRadeonSensors.kext/Contents/Info.plist</string>
+				<string>WhateverGreen.kext/Contents/Info.plist</string>
 			</dict>
 			<dict>
 				<key>Arch</key>
@@ -246,7 +238,7 @@
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 				<key>Comment</key>
-				<string>Audio codec (ALC892)</string>
+				<string>Audio patches</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -264,7 +256,7 @@
 				<key>BundlePath</key>
 				<string>RealtekRTL8111.kext</string>
 				<key>Comment</key>
-				<string>Ethernet 1GbE</string>
+				<string>Ethernet RTL8111</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -282,7 +274,7 @@
 				<key>BundlePath</key>
 				<string>LucyRTL8125Ethernet.kext</string>
 				<key>Comment</key>
-				<string>Ethernet 2.5GbE</string>
+				<string>Ethernet RTL8125</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -300,7 +292,7 @@
 				<key>BundlePath</key>
 				<string>AMDRyzenCPUPowerManagement.kext</string>
 				<key>Comment</key>
-				<string>AMD Ryzen CPU PM</string>
+				<string>AMD CPU PM</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -318,7 +310,7 @@
 				<key>BundlePath</key>
 				<string>AmdTscSync.kext</string>
 				<key>Comment</key>
-				<string>AMD TSC sync</string>
+				<string>TSC sync</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -336,7 +328,7 @@
 				<key>BundlePath</key>
 				<string>AppleMCEReporterDisabler.kext</string>
 				<key>Comment</key>
-				<string>Disable MCE reporter on AMD</string>
+				<string>Disable MCE reporter</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -354,7 +346,7 @@
 				<key>BundlePath</key>
 				<string>RestrictEvents.kext</string>
 				<key>Comment</key>
-				<string>Block unwanted processes</string>
+				<string>Restrict events</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -372,7 +364,7 @@
 				<key>BundlePath</key>
 				<string>NVMeFix.kext</string>
 				<key>Comment</key>
-				<string>NVMe SSD compatibility</string>
+				<string>NVMe power save</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -401,6 +393,24 @@
 				<string></string>
 				<key>PlistPath</key>
 				<string>USBToolBox.kext/Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>UTBDefault.kext</string>
+				<key>Comment</key>
+				<string>Default USB map</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>UTBDefault.kext/Contents/Info.plist</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -1665,7 +1675,7 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>F5KZQ4B3U02M2HKSN</string>
+			<string>F5KZ6V73N79WKBOI97</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
@@ -1681,9 +1691,9 @@
 			<key>SystemProductName</key>
 			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
-			<string>F5KZQ4B3U02M</string>
+			<string>F5KZ6V73N79WK</string>
 			<key>SystemUUID</key>
-			<string>04F6BA3E-CE0B-4754-9A03-8318FD7C56ED</string>
+			<string>FEA2FA47-37E9-4601-8D5A-5BB2FA601165</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1778,10 +1788,8 @@
 				<string></string>
 				<key>Enabled</key>
 				<true/>
-				<key>LoadEarly</key>
-				<false/>
 				<key>Path</key>
-				<string>HfsPlus.efi</string>
+				<string>OpenHfsPlus.efi</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1790,8 +1798,6 @@
 				<string></string>
 				<key>Enabled</key>
 				<true/>
-				<key>LoadEarly</key>
-				<false/>
 				<key>Path</key>
 				<string>OpenCanopy.efi</string>
 			</dict>
@@ -1802,8 +1808,6 @@
 				<string></string>
 				<key>Enabled</key>
 				<true/>
-				<key>LoadEarly</key>
-				<false/>
 				<key>Path</key>
 				<string>OpenRuntime.efi</string>
 			</dict>
@@ -1814,8 +1818,6 @@
 				<string></string>
 				<key>Enabled</key>
 				<true/>
-				<key>LoadEarly</key>
-				<false/>
 				<key>Path</key>
 				<string>ResetNvramEntry.efi</string>
 			</dict>
