@@ -416,7 +416,7 @@
 			AAAAAAAAAAAAAAAAAAAAAA==
 			</data>
 			<key>DummyPowerManagement</key>
-			<false/>
+			<true/>
 			<key>MaxKernel</key>
 			<string></string>
 			<key>MinKernel</key>
@@ -435,11 +435,15 @@
 				<string>algrey | Force cpuid_cores_per_package to constant (user-specified) | 10.13-10.14</string>
 				<key>Count</key>
 				<integer>1</integer>
+				<key>Data</key>
+				<data>
+				uAYAAAAA
+				</data>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				wegaAAAA
+				uP//AAAA
 				</data>
 				<key>Identifier</key>
 				<string>kernel</string>
@@ -447,7 +451,7 @@
 				<integer>0</integer>
 				<key>Mask</key>
 				<data>
-				//3/AAAA
+				//8AAAAA
 				</data>
 				<key>MaxKernel</key>
 				<string>18.99.99</string>
@@ -461,6 +465,10 @@
 				<data>
 				//////8A
 				</data>
+				<key>Search</key>
+				<data>
+				////AAAA
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -473,11 +481,15 @@
 				<string>algrey | Force cpuid_cores_per_package to constant (user-specified) | 10.15-11.0</string>
 				<key>Count</key>
 				<integer>1</integer>
+				<key>Data</key>
+				<data>
+				ugYAAAAA
+				</data>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				wegaAAAA
+				uv//AAAA
 				</data>
 				<key>Identifier</key>
 				<string>kernel</string>
@@ -485,7 +497,7 @@
 				<integer>0</integer>
 				<key>Mask</key>
 				<data>
-				//3/AAAA
+				//8AAAAA
 				</data>
 				<key>MaxKernel</key>
 				<string>20.99.99</string>
@@ -499,6 +511,10 @@
 				<data>
 				//////8A
 				</data>
+				<key>Search</key>
+				<data>
+				////AAAA
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -511,11 +527,15 @@
 				<string>algrey | Force cpuid_cores_per_package to constant (user-specified) | 12.0-13.2</string>
 				<key>Count</key>
 				<integer>1</integer>
+				<key>Data</key>
+				<data>
+				ugYAAAAAkA==
+				</data>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				wegaAAAA
+				uv//AAAAkA==
 				</data>
 				<key>Identifier</key>
 				<string>kernel</string>
@@ -523,7 +543,7 @@
 				<integer>0</integer>
 				<key>Mask</key>
 				<data>
-				//3/AAAA
+				//8AAAAAAA==
 				</data>
 				<key>MaxKernel</key>
 				<string>22.3.99</string>
@@ -535,6 +555,10 @@
 				</data>
 				<key>ReplaceMask</key>
 				<data>
+				</data>
+				<key>Search</key>
+				<data>
+				////AAAA/w==
 				</data>
 				<key>Skip</key>
 				<integer>0</integer>
@@ -548,11 +572,15 @@
 				<string>algrey | Force cpuid_cores_per_package to constant (user-specified) | 13.3+</string>
 				<key>Count</key>
 				<integer>1</integer>
+				<key>Data</key>
+				<data>
+				ugYAAAA=
+				</data>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				wegaAAA=
+				uv//AAA=
 				</data>
 				<key>Identifier</key>
 				<string>kernel</string>
@@ -560,7 +588,7 @@
 				<integer>0</integer>
 				<key>Mask</key>
 				<data>
-				//3/AAA=
+				//8AAAA=
 				</data>
 				<key>MaxKernel</key>
 				<string>25.99.99</string>
@@ -573,6 +601,10 @@
 				<key>ReplaceMask</key>
 				<data>
 				//////8=
+				</data>
+				<key>Search</key>
+				<data>
+				////AAA=
 				</data>
 				<key>Skip</key>
 				<integer>0</integer>
@@ -1633,7 +1665,7 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>F5K938501GUK3F7AD</string>
+			<string>F5KZQ4B3U02M2HKSN</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
@@ -1649,9 +1681,9 @@
 			<key>SystemProductName</key>
 			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
-			<string>F5KZFTY4P7QM</string>
+			<string>F5KZQ4B3U02M</string>
 			<key>SystemUUID</key>
-			<string>1101B372-0A13-4EFA-AB73-4EB4B98D0851</string>
+			<string>04F6BA3E-CE0B-4754-9A03-8318FD7C56ED</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
