@@ -147,7 +147,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/Lilu</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -163,7 +163,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/VirtualSMC</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -179,7 +179,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/SMCSuperIO</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -197,7 +197,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/SMCAMDProcessor</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -215,7 +215,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/RadeonSensor</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -231,7 +231,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/SMCRadeonGPU</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -249,7 +249,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/SMCRadeonSensors</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -267,7 +267,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/WhateverGreen</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -283,7 +283,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/AppleALC</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -299,7 +299,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/RealtekRTL8111</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -315,7 +315,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/LucyRTL8125Ethernet</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -331,7 +331,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/AMDRyzenCPUPowerManagement</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -347,7 +347,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/AmdTscSync</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -379,7 +379,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/RestrictEvents</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -395,7 +395,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/NVMeFix</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -411,7 +411,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/USBToolBox</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -1484,7 +1484,7 @@
 			<key>LauncherOption</key>
 			<string>Disabled</string>
 			<key>LauncherPath</key>
-			<string>Default</string>
+			<string></string>
 			<key>PickerAttributes</key>
 			<integer>17</integer>
 			<key>PickerAudioAssist</key>
@@ -1596,7 +1596,7 @@
 				Rg==
 				</data>
 				<key>boot-args</key>
-				<string>-v alcid=17 agdpmod=pikera keepsyms=1 npci=0x2000</string>
+				<string>-v alcid=17 agdpmod=pikera keepsyms=1 npci=0x2000 hibernatemode=0</string>
 				<key>csr-active-config</key>
 				<data>
 				AwoAAA==
@@ -1932,36 +1932,54 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
+			<key>ActivateHibernation</key>
+			<false/>
 			<key>ActivateHpetSupport</key>
+			<false/>
+			<key>AvoidHighAlloc</key>
 			<false/>
 			<key>DisableSecurityPolicy</key>
 			<false/>
+			<key>DisableSingleMapping</key>
+			<false/>
+			<key>EnableSafeModeSlide</key>
+			<true/>
 			<key>EnableVectorAcceleration</key>
 			<true/>
 			<key>EnableVmx</key>
 			<false/>
+			<key>EnableWriteUnprotector</key>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
+			<key>ForceExitBootServices</key>
+			<false/>
 			<key>ForceOcWriteFlash</key>
 			<false/>
 			<key>ForgeUefiSupport</key>
 			<false/>
 			<key>IgnoreInvalidFlexRatio</key>
-			<false/>
+			<true/>
 			<key>ReleaseUsbOwnership</key>
 			<true/>
 			<key>ReloadOptionRoms</key>
 			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
+			<key>RequestUparGradBootArgument</key>
+			<false/>
+			<key>ResizeAppleGpuBars</key>
+			<integer>-1</integer>
 			<key>ResizeGpuBars</key>
 			<integer>-1</integer>
 			<key>ResizeUsePciRbIo</key>
 			<false/>
 			<key>ShimRetainProtocol</key>
 			<false/>
+			<key>SyncRuntimePermissions</key>
+			<true/>
 			<key>TscSyncTimeout</key>
-			<integer>0</integer>
+			<integer>50000</integer>
 			<key>UnblockFsConnect</key>
 			<false/>
 		</dict>
