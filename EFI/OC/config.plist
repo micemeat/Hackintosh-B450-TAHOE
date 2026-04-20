@@ -316,7 +316,7 @@
 				<key>Comment</key>
 				<string>as.vit9696.WhateverGreen v1.7.1 — DISABLE FOR TAHOE INSTALL, RE-ENABLE AFTER FIRST BOOT</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/WhateverGreen</string>
 				<key>MaxKernel</key>
@@ -1820,7 +1820,7 @@
 				Rg==
 				</data>
 				<key>boot-args</key>
-				<string>-v agdpmod=pikera alcid=17 keepsyms=1 hb=0 revpatch=sbv,pci npci=0x3000</string>
+				<string>-v agdpmod=pikera alcid=17 keepsyms=1 hb=0 revpatch=sbv,pci npci=0x3000 debug=0x100</string>
 				<key>csr-active-config</key>
 				<data>
 				ZwAAAA==
