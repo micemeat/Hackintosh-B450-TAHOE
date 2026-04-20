@@ -296,7 +296,7 @@
 				<key>Comment</key>
 				<string>as.vit9696.WhateverGreen v1.7.1</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/WhateverGreen</string>
 				<key>MaxKernel</key>
@@ -1800,7 +1800,7 @@
 				Rg==
 				</data>
 				<key>boot-args</key>
-				<string>-v alcid=17 agdpmod=pikera keepsyms=1 hb=0 revpatch=sbv,pci debug=0x100</string>
+				<string>-v alcid=17 agdpmod=pikera keepsyms=1 hb=0 revpatch=sbv,pci</string>
 				<key>csr-active-config</key>
 				<data>
 				ZwAAAA==
