@@ -114,7 +114,7 @@
 			<key>EnableSafeModeSlide</key>
 			<true/>
 			<key>EnableWriteUnprotector</key>
-			<true/>
+			<false/>
 			<key>FixupAppleEfiImages</key>
 			<true/>
 			<key>ForceBooterSignature</key>
@@ -140,7 +140,7 @@
 			<key>SignalAppleOS</key>
 			<false/>
 			<key>SyncRuntimePermissions</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
@@ -153,6 +153,26 @@
 				<data>
 				AQAAAA==
 				</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x3,0x1)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,3,1/0,0</string>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>model</key>
+				<string>Radeon RX 5600 XT</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x3,0x1)/Pci(0x0,0x1)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,3,1/0,1</string>
+				<key>device_type</key>
+				<string>Audio device</string>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+				<key>model</key>
+				<string>Navi 10 HDMI Audio</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -294,7 +314,7 @@
 				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
 				<key>Comment</key>
-				<string>as.vit9696.WhateverGreen v1.7.1</string>
+				<string>as.vit9696.WhateverGreen v1.7.1 — DISABLE FOR TAHOE INSTALL, RE-ENABLE AFTER FIRST BOOT</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -312,7 +332,7 @@
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 				<key>Comment</key>
-				<string>as.vit9696.AppleALC v1.9.8</string>
+				<string>as.vit9696.AppleALC v1.9.8 — BROKEN ON TAHOE: no audio output, keep disabled until fixed</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -330,9 +350,9 @@
 				<key>BundlePath</key>
 				<string>RealtekRTL8111.kext</string>
 				<key>Comment</key>
-				<string>com.insanelymac.RealtekRTL8111 v2.4.2</string>
+				<string>com.insanelymac.RealtekRTL8111 v2.4.2 — MSI B450M Mortar Max onboard NIC</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/RealtekRTL8111</string>
 				<key>MaxKernel</key>
@@ -366,9 +386,9 @@
 				<key>BundlePath</key>
 				<string>AMDRyzenCPUPowerManagement.kext</string>
 				<key>Comment</key>
-				<string>wtf.spinach.AMDRyzenCPUPowerManagement v0.7.1</string>
+				<string>wtf.spinach.AMDRyzenCPUPowerManagement v0.7.1 — needed for Ryzen CPU power management</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AMDRyzenCPUPowerManagement</string>
 				<key>MaxKernel</key>
@@ -384,9 +404,9 @@
 				<key>BundlePath</key>
 				<string>AmdTscSync.kext</string>
 				<key>Comment</key>
-				<string>org.driver.AmdTscSync v2.0.0</string>
+				<string>org.driver.AmdTscSync v2.0.0 — needed for AMD multi-core TSC sync</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AmdTscSync</string>
 				<key>MaxKernel</key>
@@ -402,9 +422,9 @@
 				<key>BundlePath</key>
 				<string>AppleMCEReporterDisabler.kext</string>
 				<key>Comment</key>
-				<string>org.xlnc.disabler.MCEReporter v1.2</string>
+				<string>org.xlnc.disabler.MCEReporter v1.2 — required for AMD CPUs</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -438,9 +458,9 @@
 				<key>BundlePath</key>
 				<string>NVMeFix.kext</string>
 				<key>Comment</key>
-				<string>org.acidanthera.NVMeFix v1.1.4</string>
+				<string>org.acidanthera.NVMeFix v1.1.4 — NVMe compatibility fixes</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/NVMeFix</string>
 				<key>MaxKernel</key>
@@ -456,9 +476,9 @@
 				<key>BundlePath</key>
 				<string>USBToolBox.kext</string>
 				<key>Comment</key>
-				<string>com.dhinakg.USBToolBox.kext v1.2.0</string>
+				<string>com.dhinakg.USBToolBox.kext v1.2.0 — USB port mapping</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/USBToolBox</string>
 				<key>MaxKernel</key>
@@ -474,9 +494,9 @@
 				<key>BundlePath</key>
 				<string>UTBDefault.kext</string>
 				<key>Comment</key>
-				<string>com.dhinakg.USBToolBox.injector v1.0</string>
+				<string>com.dhinakg.USBToolBox.injector v1.0 — USB default map</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -1800,7 +1820,7 @@
 				Rg==
 				</data>
 				<key>boot-args</key>
-				<string>-v alcid=17 agdpmod=pikera keepsyms=1 hb=0 revpatch=sbv,pci</string>
+				<string>-v agdpmod=pikera alcid=17 keepsyms=1 hb=0 revpatch=sbv,pci npci=0x3000</string>
 				<key>csr-active-config</key>
 				<data>
 				ZwAAAA==
@@ -1871,7 +1891,7 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>F5KZ05JH8SJXYY2RDI</string>
+			<string>CHANGE_ME_GENERATE_WITH_GENSMBIOS</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
@@ -1887,9 +1907,9 @@
 			<key>SystemProductName</key>
 			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
-			<string>F5KZ05JH8SJXY</string>
+			<string>CHANGE_ME</string>
 			<key>SystemUUID</key>
-			<string>BB45BD32-DE1B-4A0D-9F01-CD495093F0E7</string>
+			<string>CHANGE_ME</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
