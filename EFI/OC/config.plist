@@ -1891,7 +1891,7 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>CHANGE_ME_GENERATE_WITH_GENSMBIOS</string>
+			<string>F5KZU1CO4HQVWMKZU</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
@@ -1907,9 +1907,9 @@
 			<key>SystemProductName</key>
 			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
-			<string>CHANGE_ME</string>
+			<string>F5KZU1CO4HQV</string>
 			<key>SystemUUID</key>
-			<string>CHANGE_ME</string>
+			<string>34B4EEF3-4C2D-4153-8371-C250FB6C4C80</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
