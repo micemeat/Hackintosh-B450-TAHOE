@@ -1400,6 +1400,82 @@
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>Base</key>
+				<string>_thread_quantum_expire</string>
+				<key>Comment</key>
+				<string>laobamac | thread struct offset 0x480→0x490 | _thread_quantum_expire | Tahoe 25.4+</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				SACQBAAADwAAAAAA
+				</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				LwDw8P///////wA=
+				</data>
+				<key>MaxKernel</key>
+				<string>25.99.99</string>
+				<key>MinKernel</key>
+				<string>25.4.0</string>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAZpBmkGaQ
+				</data>
+				<key>ReplaceMask</key>
+				<data>
+				////////////////
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
+				<string>_thread_dispatch</string>
+				<key>Comment</key>
+				<string>laobamac | thread struct offset 0x480→0x490 | _thread_dispatch | Tahoe 25.4+</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				SACQBAAADwAAAAAA
+				</data>
+				<key>Identifier</key>
+				<string>kernel</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data>
+				LwDw8P///////wA=
+				</data>
+				<key>MaxKernel</key>
+				<string>25.99.99</string>
+				<key>MinKernel</key>
+				<string>25.4.0</string>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAZpBmkGaQ
+				</data>
+				<key>ReplaceMask</key>
+				<data>
+				////////////////
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>Base</key>
 				<string></string>
 				<key>Comment</key>
 				<string>algrey | _mtrr_update_action | fix PAT | 10.13+</string>
@@ -1540,44 +1616,6 @@
 				</data>
 				<key>ReplaceMask</key>
 				<data>
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>Base</key>
-				<string>_thread_quantum_expire, _thread_invoke</string>
-				<key>Comment</key>
-				<string>laobamac | thread struct offset 0x480 to 0x490 | Tahoe 25.4+</string>
-				<key>Count</key>
-				<integer>2</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				SACQBAAADwAAAAAA
-				</data>
-				<key>Identifier</key>
-				<string>kernel</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data>
-				LwDw8P///////wA=
-				</data>
-				<key>MaxKernel</key>
-				<string>25.99.99</string>
-				<key>MinKernel</key>
-				<string>25.4.0</string>
-				<key>Replace</key>
-				<data>
-				AAAAAAAAZpBmkGaQ
-				</data>
-				<key>ReplaceMask</key>
-				<data>
-				////////////////
 				</data>
 				<key>Skip</key>
 				<integer>0</integer>
