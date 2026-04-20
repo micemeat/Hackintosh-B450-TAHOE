@@ -1800,7 +1800,7 @@
 				Rg==
 				</data>
 				<key>boot-args</key>
-				<string>-v alcid=17 agdpmod=pikera keepsyms=1 hb=0 revpatch=sbv,pci cpus=1</string>
+				<string>-v alcid=17 agdpmod=pikera keepsyms=1 hb=0 revpatch=sbv,pci</string>
 				<key>csr-active-config</key>
 				<data>
 				ZwAAAA==
@@ -1987,7 +1987,7 @@
 				<key>LoadEarly</key>
 				<false/>
 				<key>Path</key>
-				<string>HfsPlus.efi</string>
+				<string>OpenHfsPlus.efi</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
