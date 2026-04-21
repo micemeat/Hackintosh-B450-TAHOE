@@ -43,6 +43,25 @@
 			<true/>
 		</dict>
 	</dict>
+	<key>Boot</key>
+	<dict>
+		<key>ConsoleAttributes</key>
+		<integer>0</integer>
+		<key>HideAuxiliary</key>
+		<true/>
+		<key>LauncherOption</key>
+		<string>Full</string>
+		<key>PickerMode</key>
+		<string>Builtin</string>
+		<key>PollAppleHotKeys</key>
+		<true/>
+		<key>ShowPicker</key>
+		<true/>
+		<key>TakeoffDelay</key>
+		<integer>0</integer>
+		<key>Timeout</key>
+		<integer>5</integer>
+	</dict>
 	<key>Booter</key>
 	<dict>
 		<key>MmioWhitelist</key>
@@ -142,6 +161,15 @@
 			<key>SyncRuntimePermissions</key>
 			<true/>
 		</dict>
+	</dict>
+	<key>Debug</key>
+	<dict>
+		<key>DisableWatchDog</key>
+		<true/>
+		<key>LogModules</key>
+		<string></string>
+		<key>SysReport</key>
+		<string></string>
 	</dict>
 	<key>DeviceProperties</key>
 	<dict>
